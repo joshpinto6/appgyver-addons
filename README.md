@@ -1,2 +1,2 @@
-# Appgyver Addons website v1
+# Appgyver Addons Website
 Github Pages Repository for Appgyver Addons website
