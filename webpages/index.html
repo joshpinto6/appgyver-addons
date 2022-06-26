@@ -2,18 +2,87 @@
 <html>
 
 <head>
-    <title>Appgyver Addons 0.2 Strawberry</title>
+    <title>Appgyver Addons - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
     <link rel="stylesheet" href="index.css">
-
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container">
+      <!-- Navbar brand -->
+      <a class="navbar-brand me-2" href="https://mdbgo.com/">
+        <img
+          src="../assets/chrome.png"
+          height="24"
+          alt="MDB Logo"
+          loading="lazy"
+          style="margin-top: -1px;"
+        />
+      </a>
+      <a class="navbar-brand me-2" href="https://mdbgo.com/">
+        <img
+          src="../assets/edge.png"
+          height="24"
+          alt="MDB Logo"
+          loading="lazy"
+          style="margin-top: -1px;"
+        />
+      </a>
+  
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Appgyver Addons Strawberry</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+  
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn btn-link px-3 me-2">
+            Release Notes
+          </button>
+          <button type="button" class="btn btn-primary me-3">
+            Download for free
+          </button>
+          <a
+            class="btn btn-dark px-3"
+            title="Visit Github Repository"
+            href="https://github.com/joshpinto6/AppgyverAddons"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
 <!--Navigation bar-->
 <div id="nav-placeholder">
 
@@ -23,7 +92,6 @@
 $(function(){
   $("#nav-placeholder").load("nav.html");
 });
-document.body.scrollTop = document.documentElement.scrollTop = 0;
 
 </script>
 <!--end of Navigation bar-->
@@ -95,7 +163,7 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
             </div>
             <div class="col">
                 <div class="p-3 ">
-                    <img src="images/Github Screenshot.png" width="100%">
+                    <img class="screenshot" src="images/Github Screenshot.png" width="100%">
                 </div>
             </div>
         </div>
@@ -105,7 +173,7 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
         <div class="row gx-2 align-items-center">
             <div class="col">
                 <div class="p-3 ">
-                    <img src="images/Github Screenshot.png" width="100%">
+                    <img class="screenshot" src="images/Github Screenshot.png" width="100%">
                 </div>
             </div>
             <div class="col left-info">
