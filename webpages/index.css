@@ -3,7 +3,11 @@ body {
     color:white;
 }
 
-p {
+.light {
+    color:black;
+}
+
+.paragraph {
     color: #cbd6ec;
     font-family: sans-serif;
     font-size: 18px;
@@ -95,9 +99,9 @@ h1 {
 }
 
 #pageContent {
-    margin-left: auto;
+
     margin-top:32px;
-    margin-right: auto;
+
 }
 
 nav.navbar {
@@ -149,4 +153,20 @@ nav.navbar {
 
 .btn {
     text-decoration: none;
+}
+
+.somePage {
+    margin-top: 48px;
+}
+
+.noTop {
+    margin-top: 0px;
+}
+
+.narrowcard {
+    width: 16.3rem
+}
+
+.addon-github {
+    margin-left: 8px;
 }
