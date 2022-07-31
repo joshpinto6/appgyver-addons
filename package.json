@@ -1,0 +1,37 @@
+{
+  "name": "appgyveraddons-website",
+  "version": "1.0.0",
+  "description": "Website for Appgyver Addons Chrome Extension",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack",
+    "build-prod": "cross-env NODE_ENV=production npm run build",
+    "watch": "webpack --watch",
+    "build-standalone": "cross-env STANDALONE=1 npm run build && node src/build/generate-standalone.js",
+    "build-standalone-prod": "cross-env NODE_ENV=production npm run build-standalone",
+    "build-node": "cross-env BUILD_MODE=node npm run build",
+    "build-node-prod": "cross-env NODE_ENV=production npm run build-node",
+    "prepublishOnly": "npm run test && npm run build-node-prod && node src/build/nodejs/update-readme.js node",
+    "postpublish": "node src/build/nodejs/update-readme.js restore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshpinto6/agaddons-website.git"
+  },
+  "keywords": [
+    "appgyver"
+  ],
+  "author": "Joshpinto6",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshpinto6/agaddons-website/issues"
+  },
+  "homepage": "https://github.com/joshpinto6/agaddons-website#readme",
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "webpack": "^5.74.0"
+  }
+}
