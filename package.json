@@ -35,5 +35,8 @@
     "rimraf": "^3.0.2",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
+  },
+  "devDependencies": {
+    "css-minimizer-webpack-plugin": "^4.0.0"
   }
 }
