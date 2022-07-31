@@ -37,6 +37,7 @@
     "webpack-cli": "^4.10.0"
   },
   "devDependencies": {
-    "css-minimizer-webpack-plugin": "^4.0.0"
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "mini-css-extract-plugin": "^2.6.1"
   }
 }
