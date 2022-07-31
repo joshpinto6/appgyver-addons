@@ -246,6 +246,10 @@ module.exports = {
     // Allow to use await on module evaluation (Proposal)
   },
   plugins: [
+            new HtmlWebpackPlugin({
+            filename:'index.html',
+            template:'./webpages/index.html'
+        })
     // ...
   ],
   // list of additional plugins
