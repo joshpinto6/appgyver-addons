@@ -14,7 +14,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           branch: gh-pages
-          folder: dist
+          folder: webpages
           single-commit: true
           git-config-name: "packager build bot"
           git-config-email: "packagerbuildbot@turbowarp.org"
