@@ -1,6 +1,9 @@
 name: Deploy
 
 on:
+  push:
+        branches:
+          - master
   workflow_dispatch:
 
 permissions:
@@ -8,13 +11,19 @@ permissions:
 
 jobs:
   build:
+      name: Deploy to Github Pages
       runs-on: ubuntu-latest
+      defaults:
+       run:
+         working-directory: ./webpages
       steps:
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
-        with:
-          branch: gh-pages
-          folder: webpages
-          single-commit: true
-          git-config-name: "build bot"
-          git-config-email: ""
+        - uses: actions/checkout@v3
+
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./webpages
+            user_name: github-actions[bot]
+            user_email: 41898282+github-actions[bot]@users.noreply.github.com
+
